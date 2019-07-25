@@ -1,0 +1,117 @@
+body{
+    background-image: url('http://static1.grsites.com/archive/textures/beige/beige001.jpg');
+    background-repeat: repeat;
+    
+}
+
+
+.header-container{
+   
+    margin: left;
+    width: 40%;
+    border: 3px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 55px; 
+    margin-bottom: 20px;
+    color: white;
+}
+.instructions{
+    margin: left;
+    width: 60%;
+    
+    border: 3px;
+    padding: 10px;
+    text-align: center;
+    background-color: palegoldenrod;
+    font-size: 20px; 
+    margin-bottom: 20px;
+
+}
+.scoreBox{
+    height: 150px;
+    width: 40%;
+    
+}
+.randomNumber{
+    float: left;
+    height: 105px;
+    margin: 10px;
+    width: 40%;
+    border: 3px ;
+    padding: 10px;
+    text-align: left;
+    background-color: lightgreen;
+    font-size: 65px; 
+    margin-bottom: 20px;
+}
+
+.winsLosses{
+    float: left;
+    margin: 10px;
+    width: 25%;
+    height: 105px;
+    border: 3px;
+    padding: 10px;
+    text-align: left;
+    background-color: lightblue;
+    font-size: 20px; 
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+}
+
+.crystals{
+clear: both;
+width: 37%;
+/*margin: left;*/
+display: flex;
+flex-direction: row;
+/*justify-content: space-around;*/
+border: 1px ;
+align-items: center;
+margin: 10px;
+margin-bottom: 20px;
+/* flex-wrap: wrap;  */
+
+}
+
+.crystal{
+border: 1px solid red;
+height: 100%;
+width: 150px;
+background: black;
+margin: 10px;
+}
+.crystal img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+}
+.scoreText{
+    margin: left;
+    width: 20%;
+    
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #73ad21;
+    font-size: 25px; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+.yourScore{
+    margin: left;
+    width: 20%;
+    height: 125px  ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color:  #73AD21;
+    font-size: 80px; 
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
