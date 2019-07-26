@@ -1,0 +1,341 @@
+/* This ensures that the border and padding are included in the total size of the div
+whenever you set height or width.  It allows us to change padding and border w/o effecting the size of the total div*/
+
+/*This is the universal box resizing code.  It resizes the box in the container to fit the boder,
+and adusts the padding so that it fits the border. */
+*{
+  box-sizing: border-box;
+}
+
+
+/* This creates the background colors for the web page*/
+body {
+  /*This sets the backgound pattern for the whole page*/
+  background: url("http://static1.grsites.com/archive/textures/beige/beige001.jpg");
+  /*This sets the font type*/
+  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  /*This sets the default text color for the whole page*/
+  color: #777;
+  /*This sets the default text size for the whole lpage*/
+  font-size: 18px;
+  /*This sets the default line spacing for all the text*/
+  line-height: 34px;
+}
+
+
+/*This sets the max width of ALL CONTAINER CLASSES to 960 px*/
+.container {
+  width: 100%;
+  max-width: 1060px;
+  /* This sets the margins to 0, and auto centers everything */
+  margin: 0 auto;
+  /* This clears the floats for the container so that no other following containers get the floats.  Ie. clears the floats for subsequnet containers */
+  clear: both;
+}
+
+
+/* This is the formatting for the header row*/
+
+#main-header{
+
+  margin: 0 0 30px;
+
+  overflow: auto;
+
+  /*This postions the main-header so that it stays fixed relative to the screen size.
+  It always stays in the same place, even if the page is scrolled.*/
+  z-index: 1;
+  position: fixed;
+  /*This sets the width of the main header to the whole page*/
+  width: 100%;
+  /*This sets the background color*/
+  background: #ffffff;
+  /*This sets the TEXT color*/
+  color: #ffffff;
+  /*This set the format of the bottom border of the header row*/
+  /* border-bottom: 2ps solid #cccccc; */
+}
+
+/*This is the container that holds My Name.*/
+#logo{
+  text-align: center;
+  /*This positions my name to the left of the container*/
+  float: left;
+  /*This sets the width of the element logo*/
+  width: 250px;
+  line-height: 90px;
+  font-weight: 700;
+  /*This sets the height of the element logo*/
+  height: 90px;
+  /*Sets the font type and size, as well as the text color*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: #ffffff;
+/*This aligns the text to the center of the container*/
+  text-align: center;
+  /*This sets the background color, and text spacing*/
+  background: #4aaaa5;
+  
+}
+/*This is the nav bar in the header*/
+nav{
+  /*This moves the nav bar to the right, and moves it down 25px so that it lines
+  up with the center of the logo*/
+  float: right;
+  margin-top: 25px;
+}
+
+/*This sets the format for the nav elements. (i.e. The links)*/
+nav a{
+  /*This aligns the nav link to be in a line*/
+  display: inline-block;
+  /*This sets the padding around each link, The margins and the line spacing.
+  It add padding and adjust the margin around each link to the left side*/
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999999;
+  /*This removes the lines under each nav link*/
+  text-decoration: none;
+  
+  border-left: 1px solid #efefef;
+}
+
+h1, h2, h3 p {margin-bottom:20px;}
+
+p:last-child{margin-bottom:20px;}
+
+h1,h2,h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+}
+h1{
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 25px;
+  border-bottom:  3px solid #dddddd;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2,h3{
+  font-size: 22px;
+}
+
+/*This removes the first bar in the nav links*/
+nav a:first-child{
+  border-left: 0 none;
+}
+
+
+
+/*This is the main bio container*/
+#main-container{
+  /*This moves the box down the screen to align better*/
+  padding-top: 130px;
+
+}/*This is the main section of the main bio.  It includes the about me, image and text.*/
+
+.main-section{
+  /*This left justifies the container and sets the container to 960 px width, filling it 100%.
+  It then adds padding, and sets a margin.  It then adds background color and adds a border*/
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 40px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+ 
+}
+
+/*This formats the image in the main section*/
+.bio-image{
+  /*This moves the image to the left, and the text auto wraps around it*/
+  
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+
+}
+/*This formats the footer*/
+
+footer{
+  /*this formats the footer*/
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+
+}
+
+
+/*This is the Portfolio Page*/
+
+/*This formats the the text headers in the main section. (i.e. the picture names)*/
+h2, h3{
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+/*This is the main container that holds the images*/
+
+
+
+.main-section{
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+
+.mywork{
+  position: relative; /*This is where the problem is*/
+  float: left;
+  width: 275px;
+  margin: 25px 0 25px;
+}
+
+.mywork:nth-child(even) {
+  margin-right: 40px;
+}
+
+.mywork img{
+  width: 100%;
+  border: 0 none;
+  
+}
+
+.mywork h3{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  
+}
+
+
+/*This is the Contacts page*/
+
+#contact-form ul {
+ margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label, input[type=text], input[type=email], textarea {
+  display: block;
+  width: 100%;
+}
+input[type=text], input[type=email], textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit]{
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #4aaaa5;
+  border: 0 none;
+}
+/* Media queries allow us to replace attributes that were set in the css, dependant on the screen size of the user */
+@media only screen and (max-width: 980px) {
+  .container {
+    padding: 0 20px;
+    max-width: 768px; 
+
+  }
+  #main-container {
+    padding-top: 130px;
+    overflow: auto;
+  }
+  .main-section {
+    max-width: 768px;
+  }
+  .mywork:nth-child(even) {
+    margin-right: 0;
+  }
+  .mywork:nth-child(odd) {
+    float: right;
+  }
+  .mywork{
+    width: 47%;
+  }
+  .bio-image{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-section {
+    max-width: 100%;
+  }
+  #main-container {
+    overflow: auto;
+  }
+  .mywork{
+    width: 47%;
+    margin-bottom: 10px;
+  }
+  .mywork:nth-child(even) {
+    margin-right: 0;
+  }
+  .mywork:nth-child(odd) {
+    float: right;
+  }
+  .bio-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+#main-header {
+  position: static;
+  margin-bottom: 20px;
+}
+header.container {
+  padding: 0;
+}
+#main-container{
+  padding-top: 0;
+}
+#logo, .mywork, .bio-image {
+  width: 100%;
+}
+nav {
+  text-align: center;
+  width: 100%;
+  margin:15px 0;
+}
+nav a {
+  width: 30%;
+  padding-left: 0;
+  margin-left: 0;
+}
+}
